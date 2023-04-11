@@ -1,75 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Links</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        background-color: #f2f2f2;
-        padding: 20px;
-        text-align: center;
-      }
-      h1 {
-        font-size: 36px;
-        font-weight: bold;
-        margin: 0;
-      }
-      img {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 100px;
-        height: auto;
-      }
-      footer {
-        background-color: #f2f2f2;
-        bottom: 0;
-        padding: 20px;
-        position: absolute;
-        width: 100%;
-        text-align: center;
-      }
-      button {
-        background-color: #007bff;
-        border: none;
-        border-radius: 15px;
-        color: #fff;
-        cursor: pointer;
-        font-size: 24px;
-        font-weight: bold;
-        margin: 20px auto;
-        padding: 15px 30px;
-        display: block;
-        width: 50%;
-        transition: all 0.2s ease-in-out;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      }
-      button:hover {
-        background-color: #0056b3;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-        transform: translateY(-2px);
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Links</h1>
-      <img src="logo.png" alt="Logo">
-    </header>
-    <main>
-      <button onclick="window.location.href='https://classroom.google.com/a/not-turned-in/all'">Assignments To-Do</button>
-      <button onclick="window.location.href='pa.neonet.org'">ProgressBook</button>
-      <button onclick="window.location.href='https://www.rapidtables.com/calc/grade/grade-calculator.html'">Grade Calculator</button>
-      <button onclick="window.location.href='icloud.com'">iCloud</button>
-      <button onclick="window.location.href='quizlet.live'">Quizlet Live</button>
-    </main>
-    <footer>
-      &copy; 2023 Zachary Schimpf
-    </footer>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<title>Links</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #f2f2f2;
+			padding: 10px;
+			text-align: center;
+			position: relative;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+		}
+		header h1 {
+			font-weight: bold;
+			font-size: 24px;
+			margin: 0;
+			text-shadow: none;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		.button {
+			display: inline-block;
+			padding: 8px 16px;
+			border: 1px solid #000;
+			background-color: #fff;
+			color: #000;
+			text-align: center;
+			text-decoration: none;
+			font-size: 18px;
+			border-radius: 5px;
+			margin-bottom: 10px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			transition: all 0.3s ease;
+		}
+		.button:hover {
+			background-color: #000;
+			color: #fff;
+		}
+		footer {
+			background-color: #f2f2f2;
+			padding: 10px;
+			text-align: center;
+			position: relative;
+			box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+		}
+		footer p {
+			margin: 0;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="logo.png" alt="logo" style="position: absolute; top: 10px; left: 10px; height: 50px;">
+		<h1>Links</h1>
+	</header>
+	<div class="container">
+		<a href="https://classroom.google.com/a/not-turned-in/all" class="button">Assignments To-Do</a>
+		<a href="pa.neonet.org" class="button">ProgressBook</a>
+		<a href="https://www.rapidtables.com/calc/grade/grade-calculator.html" class="button">Grade Calculator</a>
+		<a href="icloud.com" class="button">iCloud</a>
+		<a href="quizlet.live" class="button">Quizlet Live</a>
+	</div>
+	<footer>
+		<p>&copy; 2023 Zachary Schimpf</p>
+	</footer>
+</body>
 </html>
