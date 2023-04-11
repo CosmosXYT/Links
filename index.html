@@ -6,72 +6,67 @@
 	<style>
 		body {
 			font-family: Arial, sans-serif;
+			background-color: #F5F5F5;
 			margin: 0;
 			padding: 0;
 		}
-		header {
-			background-color: #f2f2f2;
-			padding: 10px;
-			text-align: center;
-			position: relative;
-			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-		}
-		header h1 {
-			font-weight: bold;
-			font-size: 24px;
-			margin: 0;
-			text-shadow: none;
-		}
 		.container {
-			max-width: 800px;
+			max-width: 600px;
 			margin: 0 auto;
 			padding: 20px;
+			box-sizing: border-box;
 		}
-		.button {
-			display: inline-block;
-			padding: 8px 16px;
-			border: 1px solid #000;
-			background-color: #fff;
-			color: #000;
+		h1 {
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		.btn {
+			display: block;
+			margin: 10px auto;
+			padding: 10px 20px;
+			border-radius: 50px;
+			background-color: #FFFFFF;
+			color: #000000;
+			font-size: 16px;
+			font-weight: bold;
 			text-align: center;
 			text-decoration: none;
-			font-size: 18px;
-			border-radius: 5px;
-			margin-bottom: 10px;
-			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 			transition: all 0.3s ease;
 		}
-		.button:hover {
-			background-color: #000;
-			color: #fff;
+		.btn:hover {
+			background-color: #000000;
+			color: #FFFFFF;
+			transform: scale(1.1);
 		}
-		footer {
-			background-color: #f2f2f2;
-			padding: 10px;
+		.logo {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			height: 50px;
+		}
+		.footer {
 			text-align: center;
-			position: relative;
-			box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-		}
-		footer p {
-			margin: 0;
 			font-size: 14px;
+			margin-top: 40px;
+			padding-top: 20px;
+			border-top: 1px solid #CCCCCC;
 		}
 	</style>
 </head>
 <body>
-	<header>
-		<img src="logo.png" alt="logo" style="position: absolute; top: 10px; left: 10px; height: 50px;">
-		<h1>Links</h1>
-	</header>
 	<div class="container">
-		<a href="https://classroom.google.com/a/not-turned-in/all" class="button">Assignments To-Do</a>
-		<a href="pa.neonet.org" class="button">ProgressBook</a>
-		<a href="https://www.rapidtables.com/calc/grade/grade-calculator.html" class="button">Grade Calculator</a>
-		<a href="icloud.com" class="button">iCloud</a>
-		<a href="quizlet.live" class="button">Quizlet Live</a>
+		<img src="logo.png" alt="Logo" class="logo">
+		<h1>Links</h1>
+		<a href="https://classroom.google.com/a/not-turned-in/all" class="btn">Assignments To-Do</a>
+		<a href="pa.neonet.org" class="btn">ProgressBook</a>
+		<a href="https://www.rapidtables.com/calc/grade/grade-calculator.html" class="btn">Grade Calculator</a>
+		<a href="icloud.com" class="btn">iCloud</a>
+		<a href="quizlet.live" class="btn">Quizlet Live</a>
 	</div>
-	<footer>
-		<p>&copy; 2023 Zachary Schimpf</p>
-	</footer>
+	<div class="footer">&copy; Zachary Schimpf</div>
 </body>
 </html>
